@@ -51,21 +51,19 @@ const UseCallbackComp = () => {
   };
 
   return (
-    <div className="container">
+    <div>
       <h1 id="heading">use Callback Hook</h1>
-      <div className="form-container">
-        <input
-          id="skill-input"
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          onKeyPress={handleKeyPress}
-          placeholder="Enter a skill"
-        />
-        <button id="skill-add-btn" onClick={handleAddSkill}>
-          Add Skill
-        </button>
-      </div>
+      <input
+        id="skill-input"
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        onKeyPress={handleKeyPress}
+        placeholder="Enter a skill"
+      />
+      <button id="skill-add-btn" onClick={handleAddSkill}>
+        Add Skill
+      </button>
       <SkillList skills={skills} onDeleteSkill={handleDeleteSkill} />
     </div>
   );
@@ -77,4 +75,5 @@ const App = () => {
 };
 
 export default App;
+export { UseCallbackComp, SkillList };
 
