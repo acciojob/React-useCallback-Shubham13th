@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { SkillList } from "./SkillList";
+
+
 const UseCallbackComp = () => {
     const [skills, setSkills] = useState(["HTML", "CSS"]);
     const [inputValue, setInputValue] = useState("");
@@ -43,7 +45,7 @@ const UseCallbackComp = () => {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyUp={handleKeyPress}
                 placeholder="Enter a skill"
             />
             <button id="skill-add-btn" onClick={handleAddSkill}>
