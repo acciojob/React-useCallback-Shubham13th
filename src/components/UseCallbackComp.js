@@ -3,7 +3,7 @@ import { SkillList } from "./SkillList";
 
 
 const UseCallbackComp = () => {
-    const [skills, setSkills] = useState(["HTML", "CSS", "react", "JavaScript"]);
+    const [skills, setSkills] = useState(["HTML", "CSS","JavaScript", "React" ]);
     const [inputValue, setInputValue] = useState("");
 
     // useCallback to memoize the delete function
